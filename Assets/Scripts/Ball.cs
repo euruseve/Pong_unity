@@ -6,13 +6,11 @@ public class Ball : MonoBehaviour
     private float speed = 200f;
     private Rigidbody2D _rigidbody;
     
-    private void Awake() 
-    {
-        _rigidbody = GetComponent<Rigidbody2D>();
-    }
 
     private void Start() 
     {
+        _rigidbody = GetComponent<Rigidbody2D>();
+
         ResetPosition();
         AddStartingForce();
     }
